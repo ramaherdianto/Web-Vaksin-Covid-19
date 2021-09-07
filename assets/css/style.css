@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  background: rgb(231, 231, 231);
+}
+
+.jumbotron {
+  background: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 10px 60px 60px 60px;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(0, 170, 255);
+}
+
+.kotakSapaan .card {
+  background: white;
+  box-shadow: 0 0 10px 0 rgb(0, 170, 255);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 50px;
+  width: 45%;
+  font-size: 20px;
+  color: rgb(255, 148, 148);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .kotakSapaan .card {
+    width: 100%;
+  }
+}
+
+header .logo figure img {
+  height: 150px;
+  width: 150px;
+}
+
+header {
+  display: inline;
+  margin: 0;
+}
+
+nav {
+  background: rgb(0, 170, 255);
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: rgb(255, 148, 148);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+article h2,
+.container h3 {
+  color: rgb(0, 170, 255);
+}
+
+#tentang h2,
+#manfaat h2 {
+  border-bottom: 4px solid rgb(255, 158, 182);
+  width: 90px;
+}
+
+#jenisVaksin h2 {
+  border-bottom: 4px solid rgb(255, 158, 182);
+  width: 130px;
+}
+
+article {
+  display: block;
+  text-align: justify;
+}
+
+article img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  padding-top: 20px;
+}
+
+main .card {
+  background: white;
+  box-shadow: 0 0 10px 0 rgb(0, 170, 255);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+main p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: rgb(105, 105, 105);
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  position: static;
+  background: rgb(0, 170, 255);
+}
+
+.container .card {
+  text-align: center;
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  margin: 50px 50px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container .card:hover {
+  box-shadow: 0 0 20px 0 rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+
+  .container h3 {
+    font-size: 15px;
+  }
+
+  .container p {
+    font-size: 10px;
+  }
+
+  .container .card {
+    width: 65%;
+    height: 65%;
+  }
+
+  .container .card .content img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.content img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+.container .card .content a {
+  background: rgb(0, 170, 255);
+  width: 100px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  padding: 13px 20px;
+  border-radius: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.container .card .content a:hover {
+  background: rgb(64, 137, 255);
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+aside h2 {
+  margin: 20px auto;
+  color: rgb(255, 255, 255);
+  border-bottom: 4px solid rgb(255, 98, 138);
+  width: 150px;
+}
+
+@media screen and (max-width: 1100px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+aside .card {
+  background: linear-gradient(to bottom, #ff9797, rgb(255, 117, 117));
+  height: 20%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+aside header {
+  text-align: center;
+}
+
+aside .profil figure img {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profil {
+  height: 420px;
+  font-size: 15px;
+  color: rgb(76, 76, 76);
+}
+
+section {
+  font-size: 14px;
+}
+
+section h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  text-indent: initial;
+  margin: 30px auto;
+}
+
+table tr .isi {
+  padding-bottom: 10px;
+  color: white;
+}
+
+footer {
+  margin-top: 6rem;
+  padding: 10px;
+  color: white;
+  background-color: rgb(0, 170, 255);
+  text-align: center;
+  font-size: 18px;
+}
